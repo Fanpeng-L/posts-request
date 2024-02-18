@@ -1,5 +1,5 @@
 function Context() {
-  return <div>Context</div>;
+  return <section className="context">Context</section>;
 }
 
 export default Context;

@@ -1,7 +1,66 @@
-.header {
-  display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul {
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 480px;
+  max-width: 1024px;
+  font-family: "Open Sans", "Helvetica Neue", "sans-serif";
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+:root {
+  --highlight: #7fddd3;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8e8e8;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+}
+
+nav ul {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* MainBody */
+section.container {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+/* content */
+section.content {
+  flex: 1;
+}
+
+/* context */
+section.context {
+  width: 100px;
+}
+
+/* Responsive */
+@media screen and (max-width: 640px) {
+  section.container {
+    display: block;
+  }
+
+  nav {
+    display: block;
+  }
 }
