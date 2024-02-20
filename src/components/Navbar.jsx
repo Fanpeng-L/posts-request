@@ -1,14 +1,21 @@
-function Navbar() {
+import DropdownMenu from "./DropdownMenu";
+import NavItem from "./NavItem";
+
+export default function Navbar(props) {
   return (
-    <nav>
-      <h1>Posts Request</h1>
-      <ul>
-        <li className="nav-item">Nav 1</li>
-        <li className="nav-item">Nav 2</li>
-        <li className="nav-item">Nav 3</li>
-      </ul>
-    </nav>
+    <div className="navbar">
+      <NavItem icon="Nav 1">
+        <DropdownMenu />
+      </NavItem>
+      <NavItem icon="Nav 2">
+        <DropdownMenu />
+      </NavItem>
+      <NavItem icon="Nav 3">
+        <DropdownMenu />
+      </NavItem>
+      <NavItem icon="Nav 4">
+        <DropdownMenu />
+      </NavItem>
+    </div>
   );
 }
-
-export default Navbar;

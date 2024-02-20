@@ -1,11 +1,11 @@
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import MainBody from "./components/MainBody";
+import MainBody from "./components/MainBody/MainBody";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <MainBody />
       <Footer />
     </>
