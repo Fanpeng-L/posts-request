@@ -29,12 +29,14 @@ ul {
 
 /* header */
 header {
-  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  position: fixed;
+  width: 1024px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--bg);
-  margin-bottom: 40px;
   padding: 20px 40px;
 }
 
@@ -128,8 +130,10 @@ header {
 
 /* MainBody */
 section.container {
+  margin: auto;
+  margin-top: 110px;
   display: flex;
-  max-width: 100%;
+  max-width: 95%;
   justify-content: space-between;
 }
 
