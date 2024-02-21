@@ -51,7 +51,7 @@ function MainBody() {
   return (
     <div className="mainbody">
       <section className="content">
-        <h1>Select the Post based on UserID:</h1>
+        <h1>Select the Post with the ID:</h1>
         <div className="select-box">
           <select onChange={handlePostSelect}>
             {[...Array(100)].map((_, index) => (
